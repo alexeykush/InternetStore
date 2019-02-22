@@ -1,0 +1,88 @@
+<style type="text/css">
+body {
+  background: pink;
+}
+
+main{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ffb3b3;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.commodity-row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 70px 150px;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    text-align: center;
+}
+
+.commodity{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ffb3b3;
+    border-bottom: 1px solid #ffb3b3;
+}
+
+.modifying{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.modifying-item{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: red;
+    text-decoration: none;
+    color: #fff;
+    padding: 16px 0;
+    box-sizing: border-box;
+    transition:0.4s;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.modifying-item:nth-child(2){
+    background: green;
+}
+
+.modifying-item:nth-child(3){
+    background: black;
+}
+
+
+
+.modifying-item:hover{
+    transform:scale(1.1);
+}
+
+
+.total{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.back{
+    text-decoration: none;
+    margin: 0 auto;
+}
+</style>

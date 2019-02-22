@@ -1,0 +1,48 @@
+<style type="text/css">
+body {
+    background: pink;
+}
+
+main{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.main-page-link{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:#fff;
+    font-size: 45px;
+    transition: 0.4s;
+}
+
+.main-page-link:hover{
+    box-shadow: -1px 6px 90px -7px rgba(0,0,0,0.75);
+    background-color: #ffb3b3;
+}
+
+.red{
+    background: #e60000;
+}
+
+.purple{
+    background: rebeccapurple;
+}
+
+
+.green {
+    background: green;
+}
+</style>

@@ -1,0 +1,20 @@
+<style type="text/css">
+body {
+  background: pink;
+}
+
+
+.block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.back{
+    text-decoration: none;
+}
+
+
+</style>
