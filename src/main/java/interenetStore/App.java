@@ -29,6 +29,13 @@ public class App {
 
     public static void main(String[] args) throws Exception {
 
+        String webPort = System.getenv("PORT");
+
+        if(webPort == null || webPort.isEmpty()) {
+            webPort = "8080";
+        }
+
+
         DAO<User> userDAO = new UsersDaoSql(new DbConnection().connection());
         ServiceUsers userService = new ServiceUsers(userDAO);
 
@@ -50,7 +57,7 @@ public class App {
         handler.addFilter(new FilterHolder(new RegistrationFilter(userService)),"/reg/*", EnumSet.of(DispatcherType.INCLUDE,DispatcherType.REQUEST));
         handler.addFilter(new FilterHolder(new LoginFilter(userService)),"/login/*", EnumSet.of(DispatcherType.INCLUDE,DispatcherType.REQUEST));
 
-        Server server = new Server(80);
+        Server server = new Server(Integer.parseInt(webPort));
 
         server.setHandler(handler);
 
