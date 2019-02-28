@@ -1,1 +1,1 @@
-https://protected-badlands-13365.herokuapp.com/
+https://internertstore.herokuapp.com/
