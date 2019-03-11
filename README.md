@@ -1,1 +1,1 @@
-https://internertstore.herokuapp.com/
+https://internetstore.herokuapp.com/
